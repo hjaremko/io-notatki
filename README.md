@@ -5,7 +5,7 @@ Notatki z wykładu Inżynieria Oprogramowania prowadzonego na Wydziale Matematyk
 **Notatki zostały przygotowane do druku w formacie A5!!**
 
 ### Pobieranie
-Skompilowane notatki można znaleźć w zakładce **Releases**.
+Skompilowane notatki można znaleźć [tutaj](https://github.com/hjaremko/io-notatki/releases).
 
 ### Kompilacja
 ```

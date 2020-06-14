@@ -29,11 +29,15 @@
         \item \textbf{dziedziczenie implementacyjne} - ma miejsce jeśli sięgamy po dziedziczenie z zamiarem wykorzystania
         gotowego kodu, mimo różnic koncepcyjnych pomiędzy powiązanymi klasami.
         \item \textbf{dziedziczenie specyfikacyjne} - ma odzwierciedlenie w taksonomii klas (reprezentuje podtypowanie).
-        \item \textbf{delegowanie implementacji} - zamiast implementować set jako nadpisywanie metod hashtable, implementujemy go jako set korzystajacy z instancji hashtable z własnymi metodami.
+        \item \textbf{delegowanie implementacji} - zamiast implementować
+        \texttt{set} jako nadpisywanie metod \texttt{hashtable}, implementujemy go jako
+        \texttt{set} korzystajacy z instancji \texttt{hashtable} z własnymi metodami.
         Rozwiązuje problemy dziedziczenia implementacyjnego: rozszerzalność, podtypowanie.
-        \item \textbf{zasada zastępowania Liskov} - \textit{'Jeśli obiekt klasy S może stać się substytutem obiektu klasy T w
-        dowolnym miejscu kodu, w którym oczekiwany jest obiekt klasy T, to klasa S jest podtypem klasy T.'}
-        \item \textbf{wzorce projektowe} (obiektowe);
+        \item \textbf{zasada zastępowania Liskov} - \textit{Jeśli obiekt klasy
+        \texttt{S} może stać się substytutem obiektu klasy \texttt{T} w
+        dowolnym miejscu kodu, w którym oczekiwany jest obiekt klasy \texttt{T},
+        to klasa \texttt{S} jest podtypem klasy \texttt{T}.}
+        \item \textbf{wzorce projektowe} (obiektowe)
     \end{itemize}
 
 
@@ -94,9 +98,9 @@
             \item Im mniejsza i bardziej wyspecyfikowana klasa tym łatwiej ją nazwać.
             \item Łatwiejsze wprowadzanie zmian,testowanie i naprawa
         \end{itemize}
-        Jak rozpoznać naruszenie SRP?
+        Jak rozpoznać naruszenie \textit{Single responsibility principle}?
         \begin{itemize}
-            \item Ilość linii kodu ( Class:LOC > 250),
+            \item Ilość linii kodu (Class: $LOC > 250$),
             \item Za dużo zależności, słaba spojność, dużo zagnieżdżeń,
             \item Opis lub nazwa wymaga “i”,
             \item Wymaga skomplikowanych testów,
@@ -104,16 +108,18 @@
         \end{itemize}
         \item \textbf{Open/closed principle}
         \begin{itemize}
-            \item klasa powinna być otwarta na rozbudowę, ale zamknięta do jej własnej modyfikacji,
-            \item możemy dodawać nowe pola i metody, ale bez zmiany w wewnętrznej strukturze,
-            \item zmiana istniejącej struktury może mieć wpływ na inne elementy,
-            \item hermetyzacja, dziedziczenie, polimorfizm, delegaty,
-            \item unikamy instrukcji warunkowych.
+            \item Klasa powinna być otwarta na rozbudowę, ale zamknięta do jej własnej modyfikacji,
+            \item Możemy dodawać nowe pola i metody, ale bez zmiany w wewnętrznej strukturze,
+            \item Zmiana istniejącej struktury może mieć wpływ na inne elementy,
+            \item Hermetyzacja, dziedziczenie, polimorfizm, delegaty,
+            \item Unikamy instrukcji warunkowych.
         \end{itemize}
         \item \textbf{Liskov substitution principle}
         \begin{itemize}
-            \item 'Jeśli obiekt klasy S może stać się substytutem obiektu klasy T w
-            dowolnym miejscu kodu, w którym oczekiwany jest obiekt klasy T, to klasa S jest podtypem klasy T.'
+            \item \textit{Jeśli obiekt klasy
+                \texttt{S} może stać się substytutem obiektu klasy \texttt{T} w
+                dowolnym miejscu kodu, w którym oczekiwany jest obiekt klasy \texttt{T},
+                to klasa \texttt{S} jest podtypem klasy \texttt{T}.}
         \end{itemize}
         \item \textbf{Interface segregation principle}
         \begin{itemize}
@@ -200,7 +206,7 @@
                 \textbf{Proxy}
                 \begin{itemize}
                     \item Dostarcza \textbf{zamiennik obiektu} w celu jego kontroli i ochrony
-                    \item Przezroczyste odsuniecie inicjalizacji obiektu w czasie
+                    \item Przezroczyste odsunięcie inicjalizacji obiektu w czasie
                 \end{itemize}
                 &
                 \raisebox{-\totalheight}{\includegraphics[width=0.5\textwidth, height=60mm]{proxy.png}}
@@ -255,7 +261,7 @@
                 \textbf{Chain of responsibility}
                 \begin{itemize}
                     \item \textbf{Usunięcie powiązania pomiędzy nadawcą i odbiorcą} żądania
-                    \item Umożliwienie wielu obiektom obsługi żądania
+                    \item Umożliwienie wielu obiektom obsługę żądania
                 \end{itemize}
                 &
                 \raisebox{-\totalheight}{\includegraphics[width=0.5\textwidth, height=60mm]{ch-o-r.png}}
@@ -388,10 +394,10 @@
         \item \textbf{Pure Fabrication} - powstawania w systemie obiektów, które nie reprezentują
         żadnego obiektu dziedziny, a kondensują funkcje udostępniane na rzecz innych obiektów.
         \item \textbf{Indirection} - aby zapewnić low coupling często zachodzi potrzeba
-        dodania mediatora w komunikacji między biektami. Jego zadaniem jest jedynie wymiana informacji
+        dodania mediatora w komunikacji między obiektami. Jego zadaniem jest jedynie wymiana informacji
         między obiektami. Taki obiekt deleguje zadania z jednego obiektu na rzecz drugiego. Projektowanie
         systemu z użyciem mediatora wpływa na poprawę hermetyzacji elementów systemu.
-        Model MVC jest dobrym tego przykładem astosowania tej zasady. Kontroler jest mediatorem, co izoluje
+        Model MVC jest dobrym tego przykładem zastosowania tej zasady. Kontroler jest mediatorem, co izoluje
         interfejs użytkownika od modelu.
         \item \textbf{Protected variations} - zasada mówiąca o zakresie modyfikacji w systemie
         wymaganym przez określoną zmianę. W systemie powinno się identyfikować punkty niestabilności i

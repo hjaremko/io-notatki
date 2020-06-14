@@ -135,12 +135,12 @@
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{ p{.5\textwidth} p{0.5\textwidth} }
-                \textbf{Właściciel Produktu}
+                \textbf{Właściciel Produktu} \textit{(Product Owner)}
                 &
                 \begin{itemize}
                     \item odpowiedzialny za maksymalizację wartości produktu i pracy Zespołu
                     Deweloperskiego,
-                    \item jedyną osoba zarządzająca Rejestrem Produktu, tzn:
+                    \item jedyną osoba zarządzająca Rejestrem Produktu \textit{(product backlog)}, tzn:
                     \begin{itemize}
                         \item jasne artykułowanie elementów Rejestru Produktu, określanie
                         ich kolejności w sposób zapewniający osiąganie założonych celów i misji;
@@ -151,7 +151,7 @@
                 \\
 
                 \cmidrule(r){1-1}\cmidrule(l){2-2}
-                \textbf{Zespoł deweloperski}
+                \textbf{Zespoł deweloperski} \textit{(Development Team)}
                 &
                 \begin{itemize}
                     \item złożony z profesjonalistów (3-9 osób); samoorganizujący się, wielofunkcyjny.
@@ -168,7 +168,7 @@
                 \begin{itemize}
                     \item odpowiedzialny za to, by Scrum był rozumiany i stosowany,
                     \item upewnia się, że Zespół Scrumowy stosuje się do założeń teorii Scruma, jego praktyk i reguł postępowania.
-                    \item wspiera zarówno Właściciela Produktu, jak i Zespól Deweloperski.
+                    \item wspiera zarówno Właściciela Produktu \textit{(product owner)}, jak i Zespół Deweloperski.
                 \end{itemize}
                 \\
             \end{tabular}
@@ -179,27 +179,28 @@
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{ p{.5\textwidth} p{0.5\textwidth} }
-                \textbf{Rejestr Produktu}
+                \textbf{Rejestr Produktu} \textit{(Product Backlog)}
                 &
                 uporządkowana lista wszystkiego,
                 co może być potrzebne w produkcie oraz jedyne źródło wymaganych zmian.
-                Odpowiedzialny za RP jest Właściciel Produktu.
+                Odpowiedzialny za \textit{product backlog} jest \textit{product owner}.
                 Elementy posiadają atrybuty: opis, kolejność i oszacowanie (estymację).
                 \\
 
                 \cmidrule(r){1-1}\cmidrule(l){2-2}
-                \textbf{Rejestr Sprintu}
+                \textbf{Rejestr Sprintu} \textit{(Sprint Backlog)}
                 &
-                podzbiór elementów RP wybranych do Sprintu rozszerzony o plan
+                podzbiór elementów \textit{product backlog} wybranych do Sprintu rozszerzony o plan
                 dostarczenia Przyrostu produktu.
-                RS definiuje pracę, jaką ZD wykona by przekształcić elementy
-                RP w „Ukończony” Przyrost.
-                RS jest dobrze widocznym, tworzonym w czasie rzeczywistym obrazem pracy, jaką ZD planuje wykonać w trakcie Sprintu.
-                RS należy tylko i wyłącznie do ZD.
+                \textit{Sprint backlog} definiuje pracę, jaką \textit{development team} wykona by przekształcić elementy
+                \textit{product backlog} w „Ukończony” Przyrost.
+                \textit{Sprint backlog} jest dobrze widocznym, tworzonym w
+                czasie rzeczywistym obrazem pracy, jaką \textit{team} planuje wykonać w trakcie Sprintu.
+                \textit{Sprint backlog} należy tylko i wyłącznie do zespołu deweloperskiego.
                 \\
 
                 \cmidrule(r){1-1}\cmidrule(l){2-2}
-                \textbf{Monitorowanie postępów Sprintu}
+                \textbf{Monitorowanie postępów Sprintu} \textit{(Daily)}
                 &
                 możliwe w każdym momencie Sprintu (Codzienny Scrum).
                 \\
@@ -207,12 +208,12 @@
                 \cmidrule(r){1-1}\cmidrule(l){2-2}
                 \textbf{Przyrost}
                 &
-                suma wszystkich elementów RP zakończonych podczas wszystkich sprintów.
+                suma wszystkich elementów \textit{product backlog} zakończonych podczas wszystkich sprintów.
                 Na koniec Sprintu nowy Przyrost musi być „Ukończony”.
                 \\
 
                 \cmidrule(r){1-1}\cmidrule(l){2-2}
-                \textbf{Definicja Ukończenia}
+                \textbf{Definicja Ukończenia} \textit{(Definition of Done)}
                 &
                 Aby zapewnić przejrzystość, wszyscy członkowie danego zespołu muszą mieć wspólne
                 pojmowanie, co to znaczy, że praca jest skończona. W miarę dojrzewania Zespołu Scrumowego oczekuje się, że ich Definicja Ukończenia będzie
@@ -223,7 +224,7 @@
     \end{table}
 
     \subsubsection{Zdarzenia}
-    \textbf{Cztery formalne punkty} (ograniczone czasowo, wprowadzajace regularność) przeprowadzania inspekcji i dokonania korekty (adaptacji) (każde oprócz Sprinut).
+    \textbf{Cztery formalne punkty} (ograniczone czasowo, wprowadzajace regularność) przeprowadzania inspekcji i dokonania korekty (adaptacji) (każde oprócz Sprintu).
 
 
     \begin{table}[H]
@@ -244,7 +245,7 @@
                 \textbf{Przerwanie Sprintu}
                 &
                 \begin{itemize}
-                    \item tylko Właściciel Produktu ma prawo to zrobić;
+                    \item tylko \textit{product owner} ma prawo to zrobić;
                     \item w przypadku dezaktualizacji celu Sprintu,
                     \item zużywa zasoby, bo powoduje przegrupowanie podczas kolejnego Planowania
                     Sprintu.
@@ -252,62 +253,63 @@
                 \\
 
                 \cmidrule(r){1-1}\cmidrule(l){2-2}
-                \textbf{Planowanie Sprintu} - 8h/mies
+                \textbf{Planowanie Sprintu} \textit{(Sprint planning)} - 8h/mies
                 &
                 \begin{itemize}
                     \item Część pierwsza: \textit{Co będzie zrobione w tym Sprincie?}
                     Wejście:
                     \begin{itemize}
-                        \item Rejestr Produktu;
+                        \item \textit{product backlog};
                         \item ostatni przyrost;
-                        \item przewidywana pojemność ZD;
+                        \item przewidywana pojemność zespołu deweloperskiego;
                         \item ostatnie odczyty wydajności;
                     \end{itemize}
                     Wyjście:
                     \begin{itemize}
-                        \item elementu Rejestru Produktu
+                        \item elementu \textit{product backlog}
                         wybrane do zaimplementowania;
                         \item cel Sprintu.
                     \end{itemize}
                     \item Część druga: \textit{Jak wybrana praca będzie wykonana?}
                     \begin{itemize}
                         \item zwykle rozpoczęcie od stworzenia projektu systemu i planu prac
-                        niezbędnych do przetworzenia elementów Rejestru Produktu w działający Przyrost produktu.
-                        \item zanim Planowanie Sprintu dobiegnie końca, ZD powinien móc wytłumaczyć Właścicielowi
-                        Produktu i Scrum Masterowi, w jaki sposób ma zamiar pracować, organizując się samodzielnie, by osiągnąć Cel
+                        niezbędnych do przetworzenia elementów \textit{product backlog} w działający Przyrost produktu.
+                        \item zanim \textit{planning} dobiegnie końca, \textit{team}
+                        powinien móc wytłumaczyć \textit{product ownerowi} i Scrum Masterowi,
+                        w jaki sposób ma zamiar pracować, organizując się samodzielnie, by osiągnąć Cel
                         Sprintu i wytworzyć oczekiwany Przyrost.
                     \end{itemize}
                 \end{itemize}
                 \\
 
                 \cmidrule(r){1-1}\cmidrule(l){2-2}
-                \textbf{Codzienny Scrum} - 15 min/d
+                \textbf{Codzienny Scrum} \textit{(Daily Scrum)} - 15 min/d
                 &
                 \begin{itemize}
-                    \item Co zostało wykonane od ostatniego potkania?
+                    \item Co zostało wykonane od ostatniego spotkania?
                     \item Co zostanie wykonane przed kolejnym spotkaniem?
                     \item Jakie przeszkody stoją na drodze?
                 \end{itemize}
                 \\
 
                 \cmidrule(r){1-1}\cmidrule(l){2-2}
-                \textbf{Przegląd Sprintu} - 4h na zakończenie Sprintu
+                \textbf{Przegląd Sprintu} \textit{{Sprint review}} - 4h na zakończenie Sprintu
                 &
                 \begin{itemize}
-                    \item WP stwierdza, które funkcjonalności zostały
+                    \item \textit{product owner} stwierdza, które funkcjonalności zostały
                     „Ukończone”, a które nie;
-                    \item ZD omawia, co poszło dobrze w trakcie
+                    \item \textit{development team} omawia, co poszło dobrze w trakcie
                     Sprintu; jakie były problemy i jak je rozwiązano;
-                    \item ZD prezentuje „Ukończoną” pracę i
+                    \item \textit{development team} prezentuje „Ukończoną” pracę i
                     odpowiada na pytania dotyczące Przyrostu,
-                    \item WP omawia Rejestr Produktu w aktualnej
+                    \item \textit{product owner} omawia \textit{product backlog} w aktualnej
                     jego postaci. Przewiduje termin zakończenia prac.
-                    \item Cala grupa omawia kolejne kroki.
+                    \item Cała grupa omawia kolejne kroki.
                 \end{itemize}
                 \\
 
                 \cmidrule(r){1-1}\cmidrule(l){2-2}
-                \textbf{Retrospektywa Sprintu} - okazja do przeprowadzenia inspekcji
+                \textbf{Retrospektywa Sprintu} \textit{(Sprint retrospective)} - okazja do przeprowadzenia inspekcji
                 swoich działań i opracowania planu usprawnień.
                 &
                 \begin{itemize}
@@ -453,7 +455,7 @@
                 &
                 \begin{itemize}
                     \item skupiony na zespole, pilnuje dostarczania poszczególnych komponentów na czas,
-                    \item raportuje postęp do PM, prowadzi spotkania zespołowe.
+                    \item raportuje postęp do \textit{project managera}, prowadzi spotkania zespołowe.
                 \end{itemize}
                 \\
 
@@ -485,8 +487,9 @@
                 \textbf{Solution Tester}
                 &
                 \begin{itemize}
-                    \item definiuje scenariusze testowe, test casy,
-                    \item komunikuje wyniki testów do TL, pracuje z BAs nad testami akceptacyjnymi.
+                    \item definiuje scenariusze testowe, test case'y,
+                    \item komunikuje wyniki testów do \textit{team leadera},
+                    pracuje z \textit{business analystami} nad testami akceptacyjnymi.
                 \end{itemize}
                 \\
 
@@ -635,7 +638,7 @@
                 \cmidrule(r){1-1}\cmidrule(l){2-2}
                 Utrzymanie wydajności zespołu w dalszej perspektywie wymaga znacznego doświadczenia
                 &
-                Utrzymanie wydajności zespołu w dalszej perspektywie wymafa mniejszego doświadczenia.\\
+                Utrzymanie wydajności zespołu w dalszej perspektywie wymaga mniejszego doświadczenia.\\
 
                 \bottomrule
             \end{tabular}
@@ -678,7 +681,7 @@
                 \textbf{Scrum} & \textbf{Kanban}\\
                 \toprule
 
-                Określony sposób zarządzania zadaniami do realizacji w rejestrze produktu
+                Określony sposób zarządzania zadaniami do realizacji w \textit{product backlog}
                 &
                 Zadania do realizacji mogą pochodzić z różnych źródeł, a także być tworzone w ramach procesu
                 \\
@@ -757,7 +760,7 @@
         \item W projektach typu maintenance
         \item W projektach typu helpdesk
         \item W projektach z często dorzucanymi User stories
-        lub często zgłaszanymi bledami
+        lub często zgłaszanymi błędami
     \end{itemize}
 
 
